@@ -80,6 +80,7 @@ class Pop3Connection extends EventEmitter {
           host,
           port,
           socket,
+          rejectUnauthorized: false
         });
       } else {
         this._socket = socket;
